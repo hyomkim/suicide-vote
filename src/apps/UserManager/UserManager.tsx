@@ -76,7 +76,13 @@ const UserManager = () => {
                 })
             }
 
-            <button onClick={selectHander}>추첨시작</button>
+            <button onClick={selectHander}>
+                {
+                    selectedUser
+                    ?   "다시뽑기"
+                    :   "추첨시작"
+                }
+            </button>
 
             {
                 selectedUser
